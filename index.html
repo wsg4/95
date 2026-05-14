@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/style.css">
+<title>Portfolio — Billy G.</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+</style>
+</head>
+<body>
+ 
+<div class="window">
+ 
+  <!-- TITLE BAR -->
+  <div class="title-bar">
+    <div class="title-bar-text">
+      <span>🖼️</span>
+      <span id="win-title">Home — Billy G</span>
+    </div>
+    <div class="tb-controls">
+      <div class="tb-btn">_</div>
+      <div class="tb-btn">□</div>
+      <div class="tb-btn">✕</div>
+    </div>
+  </div>
+ 
+  <!-- MENU BAR / NAV -->
+  <div class="menu-bar" id="menu-bar">
+    <div class="menu-links">
+      <span class="menu-link active" data-page="home">🏠 Home</span>
+      <span class="menu-link" data-page="about">👤 About</span>
+      <span class="menu-link" data-page="work">💼 Work</span>
+      <span class="menu-link" data-page="contact">📧 Contact</span>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <span class="menu-link active" data-page="home">🏠 Home</span>
+      <span class="menu-link" data-page="about">👤 About</span>
+      <span class="menu-link" data-page="work">💼 Work</span>
+      <span class="menu-link" data-page="contact">📧 Contact</span>
+    </div>
+  </div>
+ 
+  <!-- WINDOW BODY -->
+  <div class="window-body">
+ 
+    <!-- PAGE: HOME -->
+    <div class="page active" id="page-home">
+      <div class="home-hero">
+        <div class="home-avatar">BG</div>
+        <h1>Jane Designer</h1>
+        <div class="tagline">UI/UX Designer &nbsp;·&nbsp; Product Owner</div>
+        <div class="home-cta-row">
+          <button class="cta-btn primary" data-page="work">View My Work</button>
+          <button class="cta-btn" data-page="contact">Get In Touch</button>
+        </div>
+      </div>
+      <div class="home-stats">
+        <div class="stat-box">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">30</div>
+          <div class="stat-label">Projects Shipped</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+      <div class="status-bar">
+        <div class="status-panel">📁 C:\Portfolio\Home</div>
+        <div class="status-panel" style="flex:0 0 auto;min-width:120px;">Welcome!</div>
+      </div>
+    </div>
+ 
+    <!-- PAGE: ABOUT -->
+    <div class="page" id="page-about">
+      <div class="section-label">👤 About Me</div>
+      <div class="about-layout">
+        <div class="about-sidebar">
+          <div>
+            <div class="about-photo">BG</div>
+            <div style="margin-top:8px;">
+              <div class="section-label" style="font-size:11px;">Skills</div>
+              <ul class="skills-list">
+                <li>Figma / UX Pin</li>
+                <li>UI/UX Design</li>
+                <li>Design Systems</li>
+                <li>Prototyping</li>
+                <li>Azure DevOps</li>
+                <li>HTML / CSS</li>
+                <li>Roadmap Planning</li>
+                <li>Product Ownership</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about-bio">
+          <h2>Hello, I'm Billy G.! 👋</h2>
+          <p>I’m a Product Owner at a career and technical education (CTE) software company, helping connect educators, students, and development teams to deliver tools that support real‑world learning and workforce readiness. I define and prioritize product features based on user needs, industry standards, and compliance requirements, while collaborating closely with engineering and stakeholders.</p>
+          <p>With over 15 years of front‑end development experience, I also work hands‑on in Figma to create low‑ to high‑fidelity wireframes and mockups, blending product strategy with thoughtful, user‑centered design.
+</p>
+          <hr class="win95-hr">
+          <div class="section-label" style="font-size:11px;">Experience</div>
+          <div class="exp-row">
+            <span class="exp-year">2022–Present</span>
+            <span><strong>Senior Designer</strong> — Acme Studio, NYC</span>
+          </div>
+          <div class="exp-row">
+            <span class="exp-year">2020–2022</span>
+            <span><strong>Product Designer</strong> — FinTech Co.</span>
+          </div>
+          <div class="exp-row">
+            <span class="exp-year">2018–2020</span>
+            <span><strong>UX Designer</strong> — Creative Agency X</span>
+          </div>
+        </div>
+      </div>
+      <div class="status-bar">
+        <div class="status-panel">📁 C:\Portfolio\About</div>
+        <div class="status-panel" style="flex:0 0 auto;min-width:120px;">1 object</div>
+      </div>
+    </div>
+ 
+    <!-- PAGE: WORK -->
+    <div class="page" id="page-work">
+      <div class="section-label">💼 Selected Projects</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-title-bar">BankEasy App Redesign</div>
+          <div class="project-body">
+            <span class="project-icon">🏦</span>
+            <div class="project-desc">Redesigned a legacy fintech product. Improved task completion rate by 38% through end-to-end UX audit and handoff.</div>
+            <div class="project-tags"><span class="tag">UX Research</span><span class="tag">Figma</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title-bar">Bloom Design System</div>
+          <div class="project-body">
+            <span class="project-icon">🌸</span>
+            <div class="project-desc">Built a scalable component library from scratch. 200+ components, full dark mode, WCAG AA compliant.</div>
+            <div class="project-tags"><span class="tag">Systems</span><span class="tag">Tokens</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title-bar">Wandr Travel Planner</div>
+          <div class="project-body">
+            <span class="project-icon">✈️</span>
+            <div class="project-desc">Mobile-first travel app with AI-assisted itinerary building. 0→1 product design including full brand identity.</div>
+            <div class="project-tags"><span class="tag">Mobile</span><span class="tag">Branding</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title-bar">Gourmet Kiosk UI</div>
+          <div class="project-body">
+            <span class="project-icon">🍔</span>
+            <div class="project-desc">Touch-screen ordering UX for a fast-casual restaurant chain. Reduced avg. order time by 22% post-testing.</div>
+            <div class="project-tags"><span class="tag">Kiosk</span><span class="tag">Testing</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title-bar">Nova Analytics Dashboard</div>
+          <div class="project-body">
+            <span class="project-icon">📊</span>
+            <div class="project-desc">Data analytics dashboard for a SaaS startup. Complex data made scannable through visual hierarchy and smart defaults.</div>
+            <div class="project-tags"><span class="tag">Dashboard</span><span class="tag">SaaS</span></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title-bar">Petal E-commerce</div>
+          <div class="project-body">
+            <span class="project-icon">🛒</span>
+            <div class="project-desc">Full e-commerce experience redesign for a D2C beauty brand. Conversion uplift of 19% within 60 days of launch.</div>
+            <div class="project-tags"><span class="tag">E-commerce</span><span class="tag">CRO</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="status-bar">
+        <div class="status-panel">📁 C:\Portfolio\Work</div>
+        <div class="status-panel" style="flex:0 0 auto;min-width:120px;">6 objects</div>
+      </div>
+    </div>
+ 
+    <!-- PAGE: CONTACT -->
+    <div class="page" id="page-contact">
+      <div class="section-label">📬 Get In Touch</div>
+      <div class="contact-layout">
+        <div class="contact-row">
+          <span class="contact-icon">✉️</span>
+          <div><span class="contact-label">EMAIL</span><span class="contact-val">billyg@example.com</span></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-icon">🔗</span>
+          <div><span class="contact-label">LINKEDIN</span><span class="contact-val">linkedin.com/in/billyg</span></div>
+        </div>
+      </div>
+ 
+      <hr class="win95-hr">
+      <div class="section-label" style="font-size:11px;">📝 Send a Message</div>
+ 
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;" class="contact-form-row">
+        <div>
+          <label style="font-size:11px;font-weight:bold;display:block;margin-bottom:3px;">Name:</label>
+          <input type="text" class="win95-input" placeholder="Your name">
+        </div>
+        <div>
+          <label style="font-size:11px;font-weight:bold;display:block;margin-bottom:3px;">Email:</label>
+          <input type="email" class="win95-input" placeholder="your@email.com">
+        </div>
+      </div>
+      <div style="margin-bottom:8px;">
+        <label style="font-size:11px;font-weight:bold;display:block;margin-bottom:3px;">Message:</label>
+        <textarea class="win95-textarea" placeholder="Say hello..."></textarea>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <button class="send-btn">Send Message</button>
+        <span style="font-size:11px;color:var(--win-darker);">Response time: 24–48 hrs</span>
+      </div>
+ 
+      <div class="status-bar">
+        <div class="status-panel">📁 C:\Portfolio\Contact</div>
+        <div class="status-panel" style="flex:0 0 auto;min-width:120px;">Ready</div>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+ 
+<!-- TASKBAR -->
+<div class="taskbar">
+  <div class="start-btn">🪟 <strong>Start</strong></div>
+  <div class="tb-sep"></div>
+  <div class="tb-win active" data-page="home">🏠 Home</div>
+  <div class="tb-win" data-page="about">👤 About</div>
+  <div class="tb-win" data-page="work">💼 Work</div>
+  <div class="tb-win" data-page="contact">📧 Contact</div>
+  <div class="tb-clock" id="clock">00:00</div>
+</div>
+ 
+<script>
+const pages = ['home','about','work','contact'];
+const titles = {
+  home:    '🏠 Home — Billy G.',
+  about:   '👤 About Me — Billy G.',
+  work:    '💼 My Work — Billy G.',
+  contact: '📧 Contact — Billy G.'
+};
+ 
+function navigate(pageId) {
+  if (!pages.includes(pageId)) return;
+ 
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + pageId).classList.add('active');
+ 
+  document.querySelectorAll('.menu-link').forEach(l =>
+    l.classList.toggle('active', l.dataset.page === pageId)
+  );
+ 
+  document.querySelectorAll('.tb-win').forEach(b =>
+    b.classList.toggle('active', b.dataset.page === pageId)
+  );
+ 
+  document.getElementById('win-title').textContent =
+    titles[pageId].replace(/^\S+\s/, '');
+ 
+  document.getElementById('mobile-menu').classList.remove('open');
+  window.scrollTo(0, 0);
+}
+ 
+document.addEventListener('click', function(e) {
+  const target = e.target.closest('[data-page]');
+  if (target) navigate(target.dataset.page);
+});
+ 
+document.getElementById('hamburger').addEventListener('click', function(e) {
+  e.stopPropagation();
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+ 
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('#menu-bar'))
+    document.getElementById('mobile-menu').classList.remove('open');
+});
+ 
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clock').textContent =
+    String(now.getHours()).padStart(2,'0') + ':' +
+    String(now.getMinutes()).padStart(2,'0');
+}
+updateClock();
+setInterval(updateClock, 10000);
+</script>
+</body>
+</html>
